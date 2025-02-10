@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BankApp.Models
+﻿namespace BankApp.Models
 {
     internal class BankUser
     {
@@ -20,7 +14,7 @@ namespace BankApp.Models
             Pin = pin;
             Balance = initialBalance;
             TransactionHist = new List<string>
-            {$"Account created with initial balance ${initialBalance}"};
+            {$"Account created with initial balance Rs. {initialBalance}."};
         }
     }
 }

@@ -1,28 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
-using BankApp.Models;
-
-namespace BankApp.Utils
+﻿namespace BankApp.Utils
 {
     internal class Security
     {
-        public static void GetSecuredPin(int input)
+        public static bool GetSecuredPin(int pin)
         {
-            // while (true)
-            // {
-                
-                if (input >= 1000 && input <= 9999)
+            try 
+            {
+                if(pin > 999 && pin < 10000)
                 {
-                    Console.WriteLine("PIN created successfully!");
-                    return;
+                    return true;
                 }
-
-                Console.WriteLine("Invalid PIN! Please enter a valid 4-digit number.");
-            // }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                // Console.Write("Invalid pin. User not created");
+            }
+            return false;
         }
 
 

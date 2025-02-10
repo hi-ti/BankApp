@@ -1,78 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BankApp.Models;
+﻿using BankApp.Models;
 
 namespace BankApp.Services
 {
-    internal class TransactionServices
+    internal class TransactionService : OperationsDer, Operations
     {
-        private readonly BankUser _user;
-        //private readonly BankUser Pin;
-        public TransactionServices(BankUser user) {
-        _user = user;
+        private readonly PinValidation _pinValidator;
+
+        public TransactionService(BankUser user) : base(user)
+        {
+            _pinValidator = new PinValidation(user);
         }
 
-        public bool ValidatePin(int enteredPin) => _user.Pin == enteredPin;
-
-        public void showTransactionHist()
+        public async Task Deposit(int amount)
         {
-            Console.WriteLine("\nTransaction History:");
-            foreach(string i in _user.TransactionHist) { 
-            Console.WriteLine(i);
+            try
+            {
+                if (amount <= 0)
+                {
+                    throw new ArgumentException("Deposit amount must be greater than zero.");
+                }
+
+                await Task.Run(() =>
+                {
+                    UpdateBalance(amount);
+                    AddTransaction($"Deposited Rs.{amount} | New balance: Rs.{_user.Balance}");
+                    Console.WriteLine($"Deposit Successful! New balance: Rs.{_user.Balance}");
+                    return;
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
             }
         }
 
-        public void AddTransaction(string transac)
+        public async Task Withdraw(int amount)
         {
-            _user.TransactionHist.Add(transac);
-        }
-        public void UpdateBalance(int amt)
-        {
-            _user.Balance += amt;
-        }
+            try
+            {
+                if (amount <= 0)
+                {
+                    throw new ArgumentException("Withdrawal amount must be greater than zero.");
+                }
+                else if (amount > _user.Balance)
+                {
+                    throw new InvalidOperationException("Insufficient funds.");
+                }
 
-        public void CheckBalance()
-        {
-            Console.WriteLine($"Your current balance is : Rs.{_user.Balance}");
+                await Task.Run(() =>
+                {
+                    UpdateBalance(-amount);
+                    AddTransaction($"Withdrew Rs.{amount} | New Balance: Rs.{_user.Balance}");
+                    Console.WriteLine($"Withdrawal successful! New balance: Rs.{_user.Balance}");
+                    return;
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
         }
-        public async Task Deposit(int enteredPin, int amt)
-        {
-            if (ValidatePin(enteredPin) != true)
-            {
-                throw new UnauthorizedAccessException(message: "Invalid pin! Transaction cancelled.");
-            }
-            else if (amt < 0)
-            {
-                throw new ArgumentException(
-                    "You must deposit an amount greater than zero"
-                    );
-            }
-            await Task.Run(() =>
-            {
-                UpdateBalance(amt);
-                AddTransaction($"Deposited Rs.${amt} | New balance : Rs.${_user.Balance}");
-                Console.WriteLine($"Deposit Successful! Your new balance is Rs.${_user.Balance}");
-            });
-        }
-        public async Task Withdrawal(int enteredPin, int amt)
-        {
-            if(ValidatePin(enteredPin) != true)
-            {
-                throw new UnauthorizedAccessException(message: "Invalid pin! Transaction cancelled.");
-            }
-            else if(amt < 0)
-            {
-                throw new ArgumentException("You must enter an amount greater than zero.");
-            }
-            await Task.Run(() => {
-                UpdateBalance(-amt);
-                AddTransaction($"Withdrawed Rs.${amt} | New Balance : Rs.${_user.Balance}");
-                Console.WriteLine($"Withdrawal successful! Your new balance is ${_user.Balance}");
-            });
-        }
-
     }
 }
