@@ -4,9 +4,9 @@
     {
         public static bool GetSecuredPin(int pin)
         {
-            try 
+            try
             {
-                if(pin > 999 && pin < 10000)
+                if (pin > 999 && pin < 10000)
                 {
                     return true;
                 }

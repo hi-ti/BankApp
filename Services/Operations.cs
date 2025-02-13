@@ -1,4 +1,4 @@
-namespace BankApp.Services
+﻿namespace BankApp.Services
 {
     public interface Operations
     {

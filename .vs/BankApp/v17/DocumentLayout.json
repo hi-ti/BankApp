@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|c:\\users\\hiti.dudeja\\source\\repos\\bankapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|c:\\users\\hiti.dudeja\\source\\repos\\bankapp\\services\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|solutionrelative:services\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|c:\\users\\hiti.dudeja\\source\\repos\\bankapp\\services\\fileservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|solutionrelative:services\\fileservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|c:\\users\\hiti.dudeja\\source\\repos\\bankapp\\services\\transactionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|solutionrelative:services\\transactionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|c:\\users\\hiti.dudeja\\source\\repos\\bankapp\\services\\operationsder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|solutionrelative:services\\operationsder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|c:\\users\\hiti.dudeja\\source\\repos\\bankapp\\models\\bankuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|solutionrelative:models\\bankuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|c:\\users\\hiti.dudeja\\source\\repos\\bankapp\\public\\performingoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1682736E-6642-893F-1D42-FEACC01CB409}|BankApp.csproj|solutionrelative:public\\performingoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BankUser.cs",
+              "DocumentMoniker": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Models\\BankUser.cs",
+              "RelativeDocumentMoniker": "Models\\BankUser.cs",
+              "ToolTip": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Models\\BankUser.cs",
+              "RelativeToolTip": "Models\\BankUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:51:53.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Authentication.cs",
+              "DocumentMoniker": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Services\\Authentication.cs",
+              "RelativeDocumentMoniker": "Services\\Authentication.cs",
+              "ToolTip": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Services\\Authentication.cs",
+              "RelativeToolTip": "Services\\Authentication.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T10:56:31.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwv1oAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T09:19:42.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileServices.cs",
+              "DocumentMoniker": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Services\\FileServices.cs",
+              "RelativeDocumentMoniker": "Services\\FileServices.cs",
+              "ToolTip": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Services\\FileServices.cs",
+              "RelativeToolTip": "Services\\FileServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwCIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T08:51:00.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PerformingOperations.cs",
+              "DocumentMoniker": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Public\\PerformingOperations.cs",
+              "RelativeDocumentMoniker": "Public\\PerformingOperations.cs",
+              "ToolTip": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Public\\PerformingOperations.cs",
+              "RelativeToolTip": "Public\\PerformingOperations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T12:06:55.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionServices.cs",
+              "DocumentMoniker": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Services\\TransactionServices.cs",
+              "RelativeDocumentMoniker": "Services\\TransactionServices.cs",
+              "ToolTip": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Services\\TransactionServices.cs",
+              "RelativeToolTip": "Services\\TransactionServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T09:09:54.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OperationsDer.cs",
+              "DocumentMoniker": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Services\\OperationsDer.cs",
+              "RelativeDocumentMoniker": "Services\\OperationsDer.cs",
+              "ToolTip": "C:\\Users\\hiti.dudeja\\source\\repos\\BankApp\\Services\\OperationsDer.cs",
+              "RelativeToolTip": "Services\\OperationsDer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T08:51:10.197Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

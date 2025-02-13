@@ -1,20 +1,23 @@
-﻿namespace BankApp.Models
+﻿using System.Text.Json.Serialization;
+
+namespace BankApp.Models
 {
-    internal class BankUser
+    public class BankUser
     {
-        public string FullName { get; private set; }
-        public int Pin {get; private set;}
+        //[JsonPropertyName("name")]
+        public string? Username { get; set; }
+        public int Pin { get; set; }
         public int Balance { get; set; }
-        public List<string> TransactionHist;
 
-        public BankUser(string fullName, int pin, int initialBalance)
-        {
+        // Explicit JSON constructor
+       
 
-            FullName = fullName;
-            Pin = pin;
-            Balance = initialBalance;
-            TransactionHist = new List<string>
-            {$"Account created with initial balance Rs. {initialBalance}."};
-        }
+        //public class TransactionHist
+        //{
+        //    public List<string> TransactionHistory { get; set; }
+
+        //    public TransactionHist(List<TransactionHistory> th) {
+        //            TransactionHistory = th;
+        //    }
     }
 }

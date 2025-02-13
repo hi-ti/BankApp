@@ -2,7 +2,7 @@
 
 namespace BankApp.Services
 {
-    internal class TransactionService : OperationsDer, Operations
+    internal class TransactionService : OperationsDer
     {
         private readonly PinValidation _pinValidator;
 
